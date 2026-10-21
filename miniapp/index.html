@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Offer Radar | رادار العروض</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{color-scheme:dark;--bg:#0b1424;--panel:#13213a;--line:#263956;--txt:#f5f7fa;--muted:#aabbd0;--accent:#3ad6c1;--gold:#f3bd71}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b3456,var(--bg) 60%);color:var(--txt);font:15px system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+header,main,footer{max-width:900px;margin:auto;padding:18px}header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+button,input{font:inherit}button{background:#203451;border:1px solid var(--line);border-radius:14px;color:var(--txt);cursor:pointer;padding:11px 15px}button.active,.primary{background:var(--accent);color:#071d23;border-color:transparent;font-weight:700}
+.logo{font-size:18px;font-weight:850}small,.muted{color:var(--muted)}.hero{padding:25px;border:1px solid #315174;background:linear-gradient(135deg,#203959,#122743);border-radius:24px}
+h1{font-size:clamp(24px,7vw,42px);line-height:1.25;margin:9px 0}.hero p{color:var(--muted);line-height:1.8;margin-bottom:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:20px 0}.stat{border:1px solid var(--line);padding:16px;background:var(--panel);border-radius:18px}.stat b{font-size:27px;display:block;color:var(--accent)}
+.bar{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.bar button{padding:8px 12px;font-size:13px}
+input{width:100%;background:#101e32;border:1px solid #35506c;border-radius:13px;color:var(--txt);padding:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:12px}.card{border:1px solid var(--line);background:var(--panel);padding:18px;border-radius:20px;min-width:0}
+.card h3{font-size:16px;line-height:1.6}.card p{font-size:13px;color:var(--muted);line-height:1.65}.pill{border:1px solid #3b596c;border-radius:22px;padding:5px 8px;display:inline-block;margin:0 0 5px 4px;font-size:11px}
+.card a{display:inline-block;color:var(--accent);overflow-wrap:anywhere;text-decoration:none;margin-top:7px}
+section{margin:24px 0}.section-heading{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.notice{border:1px solid #5e5139;background:#2e2930;border-radius:14px;color:#e7cc9c;padding:12px;line-height:1.7}
+form{display:flex;gap:9px;flex-wrap:wrap}form input{flex:1 1 240px}form button{flex:0 0 auto}
+#results .empty{padding:20px;color:var(--muted)}#admin{border:1px solid var(--line);padding:15px;border-radius:18px}#admin[hidden]{display:none}
+footer{color:var(--muted);font-size:12px;text-align:center;padding-bottom:32px}
+</style></head>
+<body>
+<header><span class="logo">📡 AI OFFER RADAR</span><button id="language">EN</button></header>
+<main>
+<div class="hero"><small id="toplabel">البحث العالمي عن عروض الذكاء الاصطناعي</small><h1 id="headline">عروض الذكاء الاصطناعي، في مكان واحد.</h1><p id="intro">ابحث عن التجارب المجانية واشتراكات ChatGPT وGemini وGrok وواجهات API من مصادر عامة بلغات متعددة.</p></div>
+<div class="stats"><div class="stat"><b id="total">0</b><small id="totalLabel">نتيجة</small></div><div class="stat"><b id="freeCount">0</b><small id="freeLabel">مجاني</small></div><div class="stat"><b id="sourcesCount">0</b><small id="sourcesLabel">مصدر بحث</small></div></div>
+<section><div class="section-heading"><h2 id="offersLabel">عروض اليوم</h2><small id="scanDate">—</small></div><input id="search" placeholder="ابحث باسم الشركة أو العرض"><div class="bar" id="filters"><button data-kind="all" class="active">الكل</button><button data-kind="free">مجاني</button><button data-kind="api">API</button><button data-kind="subscription">اشتراكات</button><button data-kind="community">قنوات</button></div><div id="results" class="cards"></div></section>
+<section><h2 id="suggestLabel">اقتراح مصدر جديد</h2><form id="sourceForm"><input id="sourceInput" placeholder="https://example.com" required type="url"><button class="primary" id="sendLabel">إرسال</button></form><p class="muted" id="status"></p></section>
+<section id="admin" hidden><h2 id="adminLabel">اقتراحات بانتظار مراجعة المشرف</h2><div id="adminEntries"></div></section>
+<p class="notice" id="warning">⚠️ الروابط العامة والعناوين ليست ضمانًا لصحة عروض البيع أو الأسعار. افحص المصدر قبل الدفع.</p>
+</main><footer><span id="footerText">النشرة اليومية الساعة 9 مساءً بتوقيت اليمن، إذا اكتملت إعدادات القناة والنشر.</span></footer>
+<script>
+(function(){
+'use strict';
+const tg=window.Telegram?.WebApp;if(tg){tg.ready();tg.expand();}
+const el=id=>document.getElementById(id);
+let lang='ar',kind='all',feed={items:[],count:0,counts:{},scanned_feeds:0};
+const strings={
+ar:{toplabel:'البحث العالمي عن عروض الذكاء الاصطناعي',headline:'عروض الذكاء الاصطناعي، في مكان واحد.',intro:'ابحث عن التجارب المجانية والاشتراكات المخفضة وواجهات API من مصادر عامة بلغات متعددة.',totalLabel:'نتيجة',freeLabel:'مجاني',sourcesLabel:'مصدر بحث',offersLabel:'عروض اليوم',suggestLabel:'اقتراح مصدر جديد',sendLabel:'إرسال',adminLabel:'اقتراحات بانتظار مراجعة المشرف',warning:'⚠️ الروابط العامة والعناوين ليست ضمانًا لصحة عروض البيع أو الأسعار. افحص المصدر قبل الدفع.',footerText:'النشرة اليومية الساعة 9 مساءً بتوقيت اليمن بعد تفعيل إعدادات النشر.',noOffers:'لا توجد نتائج مطابقة أو لم يكتمل الجمع بعد.',source:'المصدر',open:'افتح الرابط ↗',pending:'تم استلام الرابط للمراجعة',error:'تعذر استلام الرابط',original:'العنوان الأصلي',search:'ابحث باسم الشركة أو العرض'},
+en:{toplabel:'Global multilingual AI deal discovery',headline:'The best AI deals, in one place.',intro:'Find free trials, subscription discounts and API credits from public multilingual sources.',totalLabel:'findings',freeLabel:'free',sourcesLabel:'feeds',offersLabel:'Latest offers',suggestLabel:'Suggest a source',sendLabel:'Submit',adminLabel:'Pending source suggestions',warning:'⚠️ Public links and titles do not prove seller legitimacy or prices. Verify before paying.',footerText:'Daily bulletin at 9 PM Yemen time after channel setup.',noOffers:'No matching findings yet, or a live scan has not run.',source:'Source',open:'Open original ↗',pending:'Submitted for review',error:'Could not submit source',original:'original title',search:'Search by provider or offer'}};
+function tr(){let s=strings[lang];document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ for(let key of ['toplabel','headline','intro','totalLabel','freeLabel','sourcesLabel','offersLabel','suggestLabel','sendLabel','adminLabel','warning','footerText'])el(key).textContent=s[key];
+ el('language').textContent=lang==='ar'?'EN':'عربي';el('search').placeholder=s.search;
+ const names=lang==='ar'?['الكل','مجاني','API','اشتراكات','قنوات']:['All','Free','API','Subscriptions','Community'];
+ [...document.querySelectorAll('[data-kind]')].forEach((b,i)=>b.textContent=names[i]);render();}
+function node(tag,value){let n=document.createElement(tag);n.textContent=String(value??'');return n;}
+function safe(url){try{let u=new URL(url);return ['https:','http:'].includes(u.protocol)?u.href:null;}catch{return null;}}
+function render(){el('total').textContent=feed.count||0;el('freeCount').textContent=feed.counts?.free||0;el('sourcesCount').textContent=feed.scanned_feeds||0;el('scanDate').textContent=feed.date||'—';
+ let query=el('search').value.toLowerCase().trim();let area=el('results');area.replaceChildren();
+ const selected=(feed.items||[]).filter(x=>(kind==='all'||x.kind===kind)&&[x.title,x.summary,x.source,x.arabic_title,x.english_title].filter(Boolean).some(x=>String(x).toLowerCase().includes(query)));
+ if(!selected.length){let n=node('div',strings[lang].noOffers);n.className='empty';area.append(n);return;}
+ for(let x of selected){
+  let card=node('article','');card.className='card';let badge=node('span',(x.kind||'offer')+' · '+({official_source:'🏢 Official',independent_report:'📰 Report',unverified_third_party:'⚠️ Unverified'}[x.trust]||'⚠️ Unverified'));badge.className='pill';card.append(badge);
+  const title=(lang==='ar'?x.arabic_title:x.english_title)||x.title;
+  card.append(node('h3',title));if(x.summary)card.append(node('p',x.summary));
+  let a=node('a',strings[lang].open),url=safe(x.url);if(url){a.href=url;a.target='_blank';a.rel='noopener noreferrer nofollow';card.append(a);}
+  area.append(card);
+ }}
+function call(name,payload={}){return new Promise((resolve,reject)=>{
+ if(!tg?.initData||!tg?.Serverless?.call){reject(new Error('Open inside Telegram Mini App'));return;}
+ tg.Serverless.call(name,payload,(err,result)=>err?reject(new Error(err.message||'Serverless unavailable')):resolve(result));
+});}
+async function load(){el('status').textContent=lang==='ar'?'تحميل البيانات…':'Loading…';
+ try{feed=await call('dashboard');el('status').textContent='';
+ if(feed.admin){el('admin').hidden=false;const res=await call('adminSuggestions');const box=el('adminEntries');box.replaceChildren();
+ for(let item of res.items||[])box.append(node('p','#'+item.id+' · '+item.status+' · '+item.url));}
+ }catch(e){el('status').textContent=e.message;}render();}
+el('language').onclick=()=>{lang=lang==='ar'?'en':'ar';tr();};
+el('search').addEventListener('input',render);
+document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{kind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('active',x===b));render();});
+el('sourceForm').onsubmit=async e=>{e.preventDefault();try{const u=el('sourceInput').value;if(!safe(u)||!u.startsWith('https://'))throw new Error('HTTPS required');
+ await call('submitSource',{url:u});el('status').textContent=strings[lang].pending;el('sourceInput').value='';}
+ catch(x){el('status').textContent=strings[lang].error+': '+x.message;}};
+tr();load();
+})();
+</script></body></html>

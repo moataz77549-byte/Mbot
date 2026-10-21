@@ -1,0 +1,80 @@
+{
+  "queries": [
+    {
+      "q": "(ChatGPT OR Gemini OR Grok OR Claude) (discount OR promo OR trial OR coupon)",
+      "lang": "en",
+      "country": "US"
+    },
+    {
+      "q": "(OpenRouter OR Groq OR Mistral OR NVIDIA) free API credits offer",
+      "lang": "en",
+      "country": "US"
+    },
+    {
+      "q": "شات جي بي تي جيمناي جروك خصم اشتراك عرض مجاني",
+      "lang": "ar",
+      "country": "SA"
+    },
+    {
+      "q": "ChatGPT Gemini descuento suscripción prueba gratis",
+      "lang": "es",
+      "country": "ES"
+    },
+    {
+      "q": "ChatGPT Gemini Claude réduction essai gratuit API",
+      "lang": "fr",
+      "country": "FR"
+    },
+    {
+      "q": "ChatGPT Gemini Grok скидка бесплатно подписка API",
+      "lang": "ru",
+      "country": "RU"
+    },
+    {
+      "q": "ChatGPT Gemini indirim ücretsiz abonelik API",
+      "lang": "tr",
+      "country": "TR"
+    },
+    {
+      "q": "ChatGPT Gemini desconto grátis API",
+      "lang": "pt",
+      "country": "BR"
+    },
+    {
+      "q": "ChatGPT Gemini promo gratis langganan API",
+      "lang": "id",
+      "country": "ID"
+    },
+    {
+      "q": "site:t.me ChatGPT Gemini AI subscription discount free trial",
+      "lang": "en",
+      "country": "US"
+    },
+    {
+      "q": "site:whatsapp.com/channel AI API free trial Gemini discount",
+      "lang": "en",
+      "country": "US"
+    },
+    {
+      "q": "site:facebook.com AI subscription discount ChatGPT Gemini",
+      "lang": "en",
+      "country": "US"
+    },
+    {
+      "q": "site:openrouter.ai free model offer API",
+      "lang": "en",
+      "country": "US"
+    },
+    {
+      "q": "site:ai.google.dev gemini api free tier update",
+      "lang": "en",
+      "country": "US"
+    }
+  ],
+  "rss": [],
+  "telegram_channels": [],
+  "watched_bot_handles": [
+    "ver_pixel_bot",
+    "zetocnikAI_bot"
+  ]
+}

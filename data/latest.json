@@ -1,0 +1,17 @@
+{
+  "project": "AI Offer Radar",
+  "generated_at": null,
+  "timezone": "Asia/Aden",
+  "date": null,
+  "scanned_feeds": 0,
+  "count": 0,
+  "counts": {
+    "api": 0,
+    "free": 0,
+    "subscription": 0,
+    "community": 0
+  },
+  "items": [],
+  "disclaimer_ar": "لم يتم إجراء جمع حي بعد. النتائج لا تُنشأ تجريبيًا.",
+  "disclaimer_en": "No live scan has run. No mock offers are included."
+}

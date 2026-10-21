@@ -1,0 +1,29 @@
+name: Deploy Telegram Serverless
+on:
+  push:
+    branches: [main]
+    paths: ['tgcloud/**','miniapp/**','scripts/**','package.json','tgcloud.jsonc','.github/workflows/deploy-serverless.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - run: npm run check && npm run build
+      - name: Deploy code and hosted Mini App
+        env:
+          TGCLOUD_TOKEN: ${{ secrets.TGCLOUD_TOKEN }}
+        run: |
+          if [ -z "$TGCLOUD_TOKEN" ]; then
+            echo "TGCLOUD_TOKEN Secret missing: skip Telegram deploy"
+            exit 0
+          fi
+          npx tgcloud push
+          npx tgcloud migrate --safe

@@ -1,0 +1,14 @@
+{
+  "static": {
+    "source": "dist",
+    "spa": true,
+    "headers": [
+      {
+        "path": "/*",
+        "set": {
+          "Referrer-Policy": "no-referrer"
+        }
+      }
+    ]
+  }
+}
