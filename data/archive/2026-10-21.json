@@ -1,14 +1,14 @@
 {
   "project": "AI Offer Radar",
-  "generated_at": "2026-10-21T18:24:31.044595+03:00",
+  "generated_at": "2026-10-21T18:24:59.438403+03:00",
   "timezone": "Asia/Aden",
   "date": "2026-10-21",
   "scanned_feeds": 30,
-  "count": 8,
+  "count": 12,
   "counts": {
     "free": 1,
     "api": 1,
-    "subscription": 6,
+    "subscription": 10,
     "community": 0
   },
   "items": [
@@ -58,6 +58,36 @@
       "english_translated": true
     },
     {
+      "id": "7ed4e78c1c9c93",
+      "title": "ChatPlayground AI Unlimited Plan compares ChatGPT, Gemini, and Claude for $60 ($619 value) TL;DR: Compare answers from 20+ AI models in one window with a ChatPlayground AI Unl",
+      "summary": "ChatPlayground AI Unlimited Plan compares ChatGPT, Gemini, and Claude for $60 ($619 value) TL;DR: Compare answers from 20+ AI models in one window with a ChatPlayground AI Unlimited Plan…... Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR3FnQmdyRVRwYVFoSXBWRFVDdHhsa1hFRzlMWmNTcEZqbU4ycVlwR0ZBaklMeVVlcUc5S09SRG9DTUxuX1FUdndzTnczVkt6WV9OQ01MbGZQLVV5TUhFZ2sxa2JaVW50SGp2Sk9yZ3JSYk9NVk10VFd0TVNoT2JKUkU1amtOeERSMEVjcUFMaEFUTFYwdlN1RXdHTGZIZi1GU1Nza0lqZVpSWTNibzRzMktBMEFEalVSeFQtVGZ1SHVCVEFxenFYOVBPSThlTV9pdEEybg?oc=5",
+      "source": "Google News/en",
+      "kind": "subscription",
+      "trust": "independent_report",
+      "published_at": "2026-10-19T18:16:15+00:00",
+      "price_mentioned": null,
+      "arabic_title": "تقارن خطة ChatPlayground AI Unlimited بين ChatGPT و Gemini و Claude مقابل 60 دولارًا (قيمة 619 دولارًا) ليرة تركية ؛DR: قارن الإجابات من أكثر من 20 طرازًا من الذكاء الاصطناعي في نا",
+      "arabic_translated": true,
+      "english_title": "ChatPlayground AI Unlimited Plan compares ChatGPT, Gemini, and Claude for $60 ($619 value) TL;DR: Compare answers from 20+ AI models in one window with a ChatPlayground AI Unl",
+      "english_translated": true
+    },
+    {
+      "id": "20b9310a99a1dd",
+      "title": "AI suite with multiple models for $20/seat - Facebook",
+      "summary": "AI suite with multiple models for $20/seat Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQV3ZjQmNmY25sblhTTnNPMW0tcDE4WkVvUnZ2RkZZaXVsRVFSd085aW83M3JrbVBfWDhXSUhWcDNlYS1PWU13UFZNMFVUcUNuX0lHeXdSSTZ1X0VneV9kYmRTVDJxUUdOSFJOUXFZOXBaQ2huSnVuZXdQaFVLaFM1ZFA1TDdaN3RBQVNpYno4LWNoR3VRVU9kSjFsV1hWTFpWU2h2a3lOc2V3Z2xEWm16RlowaWxiYXY3dmR1cnYta2l6T2Z5enF6QkttRnVjWlc1b04xeFVLcUNUVU1iSmtn?oc=5",
+      "source": "Google News/en",
+      "kind": "subscription",
+      "trust": "independent_report",
+      "published_at": "2026-10-19T15:55:32+00:00",
+      "price_mentioned": null,
+      "arabic_title": "مجموعة ذكاء اصطناعي مع موديلات متعددة مقابل 20 $/- Facebook",
+      "arabic_translated": true,
+      "english_title": "AI suite with multiple models for $20/seat - Facebook",
+      "english_translated": true
+    },
+    {
       "id": "f0725225517f0d",
       "title": "Want to learn how to get premium AI tools and digital subscriptions at cheaper rates and start reselling them for profit? I’m hosting a practical training where I’ll teach you",
       "summary": "Want to learn how to get premium AI tools and digital subscriptions at cheaper rates and start reselling them for profit? I’m hosting a practical training where I’ll teach you how to source premium subscriptions, generate activation links where applicable, resell at Fac",
@@ -70,6 +100,21 @@
       "arabic_title": "هل تريد معرفة كيفية الحصول على أدوات الذكاء الاصطناعي المتميزة والاشتراكات الرقمية بأسعار أرخص والبدء في إعادة بيعها لتحقيق الربح ؟ أستضيف تدريبًا عمليًا حيث سأعلمك",
       "arabic_translated": true,
       "english_title": "Want to learn how to get premium AI tools and digital subscriptions at cheaper rates and start reselling them for profit? I’m hosting a practical training where I’ll teach you",
+      "english_translated": true
+    },
+    {
+      "id": "141f73a79ef019",
+      "title": "I used to spend $400 a month in ChatGPT and another $400 a month on Claude and then another $200 a month of Gemini However, lately I’ve made some adjustments Because each one ",
+      "summary": "I used to spend $400 a month in ChatGPT and another $400 a month on Claude and then another $200 a month of Gemini However, lately I’ve made some adjustments Because each one serves as a different team member with me So I’ve dropped my Claude Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQ3VjU2EwR1B0UEFLMmFZLU5kX2xaZWUyU0xHeXBlaklybHhzWXVIWWJ6S0ZPdUFjYjVDZGxWbUlhTGpIRmx3RFJrR3pXMUdwUFh4ZzQzamw3Mm1vaUVnekZCZTgzdzFCaEx1U21FcF9ubE1oR056eXFRZVJBQkRiQW5ueG9KVkNOdTdyUnhqV0ZVQ1ZKV1liUXZTUkpKbmY5TkhnREN5MHMyQ2MzTzd6RlJFQmM0WUZIMHZ6N2pZTk9GLUg4YzNXWlR4WjZTQnBjTWo1TVFJX2ExX1VVMlFsMmFsWQ?oc=5",
+      "source": "Google News/en",
+      "kind": "subscription",
+      "trust": "independent_report",
+      "published_at": "2026-10-19T02:21:23+00:00",
+      "price_mentioned": null,
+      "arabic_title": "اعتدت على إنفاق 400 $ شهريًا في و 400 $ أخرى شهريًا على ثم 200 $ أخرى شهريًا من الجوزاء ومع ذلك، في الآونة الأخيرة أجريت بعض التعديلات لأن كل منها",
+      "arabic_translated": true,
+      "english_title": "I used to spend $400 a month in ChatGPT and another $400 a month on Claude and then another $200 a month of Gemini However, lately I’ve made some adjustments Because each one ",
       "english_translated": true
     },
     {
@@ -127,10 +172,25 @@
       "trust": "independent_report",
       "published_at": "2026-10-18T02:05:01+00:00",
       "price_mentioned": null,
-      "arabic_title": "يتأثر معظم محتوى الذكاء الاصطناعي بتحديثات Google لأنه رخيص وغير محرر. لقد قمنا ببناء نظام تحسين محركات البحث للوكلاء على إعداد ثنائي الدماغ لإثبات أنه يمكنك توسيع نطاق محتوى الخبر",
-      "arabic_translated": true,
-      "english_title": "Most AI content gets hammered by Google updates because it's cheap, unedited slop. We built an agentic SEO system on a two-brain setup to prove you can scale expert content wi",
-      "english_translated": true
+      "arabic_title": null,
+      "arabic_translated": false,
+      "english_title": null,
+      "english_translated": false
+    },
+    {
+      "id": "4980a62243ff33",
+      "title": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case - TradingView",
+      "summary": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeW81a3dGaklVcGpncHM3MklnOFFRREgzVlZaTzdpYnFod1VTUkVLVXY4VTNCX2NUcEowUFFNNWlRV2VjbWF6S20yZkxpNXFUaVlocHNENG9OY1B1RzlfamVwbDZYZTZicmxvWGZjUkNQWTY2M2VHbEI5dnU1cXNLai14WWpmeWtjREVPVmU2VllMZHdvcGxyZEZZSmJuOVk5a0x0NlBYVEc4QVhDSTk3MC1tdlQtdkhvaTZ0R0hYVVJ3VWxLTUJKbFlLbzVtbTZ6OE5OTkdSUQ?oc=5",
+      "source": "Google News/en",
+      "kind": "subscription",
+      "trust": "independent_report",
+      "published_at": "2026-10-17T18:06:44+00:00",
+      "price_mentioned": null,
+      "arabic_title": null,
+      "arabic_translated": false,
+      "english_title": null,
+      "english_translated": false
     }
   ],
   "disclaimer_ar": "الروابط والأسعار ليست ضمانًا؛ تحقّق قبل الدفع.",
