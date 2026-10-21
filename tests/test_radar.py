@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime,timezone
-from collector.radar import canonical, relevant, classify, rss_xml, digest, report_for
+from collector.radar import canonical, relevant, classify, rss_xml, digest, report_for, quoted_price
 
 class RadarTest(unittest.TestCase):
     def test_canonical(self):
@@ -10,6 +10,12 @@ class RadarTest(unittest.TestCase):
     def test_relevance(self):
         self.assertTrue(relevant('ChatGPT free trial','','https://example.com'))
         self.assertFalse(relevant('leaked api key ChatGPT free trial','','https://example.com'))
+    def test_no_unrelated_posts(self):
+        self.assertFalse(relevant('Gemini API 403 Error — Free Tier Restricted','','https://example.com'))
+        self.assertFalse(relevant('AI content gets hammered by Google SEO updates because it is cheap','','https://example.com'))
+        self.assertFalse(relevant('ChatGPT is a helpful assistant','A free trial might exist','https://example.com'))
+    def test_mentioned_prices(self):
+        self.assertEqual(quoted_price('AI lifetime subscription for $30'), '$30')
     def test_rss(self):
         rows=rss_xml(b'<rss><channel><item><title>ChatGPT free trial</title><link>https://example.com</link></item></channel></rss>','RSS')
         self.assertEqual(len(rows),1)
