@@ -22,8 +22,9 @@ jobs:
           TGCLOUD_TOKEN: ${{ secrets.TGCLOUD_TOKEN }}
         run: |
           if [ -z "$TGCLOUD_TOKEN" ]; then
-            echo "TGCLOUD_TOKEN Secret missing: skip Telegram deploy"
-            exit 0
+            echo "::error title=Deployment blocked::TGCLOUD_TOKEN repository secret is missing. Set it in Settings > Secrets and variables > Actions."
+            exit 1
           fi
           npx tgcloud push
           npx tgcloud migrate --safe
+          npx tgcloud webhook
