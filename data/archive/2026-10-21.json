@@ -1,31 +1,46 @@
 {
   "project": "AI Offer Radar",
-  "generated_at": "2026-10-21T18:20:43.655416+03:00",
+  "generated_at": "2026-10-21T18:22:30.570364+03:00",
   "timezone": "Asia/Aden",
   "date": "2026-10-21",
   "scanned_feeds": 30,
-  "count": 28,
+  "count": 27,
   "counts": {
-    "free": 9,
-    "api": 11,
-    "subscription": 8,
+    "free": 7,
+    "api": 10,
+    "subscription": 10,
     "community": 0
   },
   "items": [
     {
-      "id": "d834d165028f24",
+      "id": "6d2bc8978217ed",
       "title": "ChatGPT",
-      "summary": "Usa ChatGPT para responder preguntas, escribir, crear imágenes, completar tareas y programar, todo en un solo lugar. Empieza gratis o descarga la aplicación.",
-      "url": "https://chatgpt.com/es-ES",
+      "summary": "Usa ChatGPT para responder preguntas, escribir, crear imágenes, hacer tareas y programar, todo en un solo lugar. Empieza gratis o descarga la aplicación.",
+      "url": "https://chatgpt.com/es-419",
       "source": "Bing/es",
       "kind": "free",
       "trust": "independent_report",
-      "published_at": "2026-10-21T12:37:00+00:00",
+      "published_at": "2026-10-21T14:11:00+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "ChatGPT",
+      "arabic_translated": true,
+      "english_title": "ChatGPT",
+      "english_translated": true
+    },
+    {
+      "id": "0bbe02988ed324",
+      "title": "OpenRouter Trust Center | Powered by SafeBase",
+      "summary": "Started in early 2023 as the first LLM marketplace, OpenRouter has grown to become the largest and most popular AI gateway. We eliminate vendor lock-in while offering better prices, uptime, and enterprise-grade reliability.",
+      "url": "https://trust.openrouter.ai/",
+      "source": "Bing/en",
+      "kind": "subscription",
+      "trust": "independent_report",
+      "published_at": "2026-10-21T13:42:00+00:00",
+      "price_mentioned": null,
+      "arabic_title": "OpenRouter Trust Center | مدعوم من SafeBase",
+      "arabic_translated": true,
+      "english_title": "OpenRouter Trust Center | Powered by SafeBase",
+      "english_translated": true
     },
     {
       "id": "fede3fd02b271d",
@@ -35,42 +50,12 @@
       "source": "Bing/en",
       "kind": "free",
       "trust": "independent_report",
-      "published_at": "2026-10-21T07:08:00+00:00",
+      "published_at": "2026-10-21T00:34:00+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
-    },
-    {
-      "id": "fa757ca3b476e9",
-      "title": "ChatGPT 中文",
-      "summary": "使用 ChatGPT 解答问题、写作、创建图像、完成工作和编写代码，一站式完成。 免费开始使用，或下载应用。",
-      "url": "https://chatgpt.com/zh-CN",
-      "source": "Bing/en",
-      "kind": "free",
-      "trust": "independent_report",
-      "published_at": "2026-10-21T06:47:00+00:00",
-      "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
-    },
-    {
-      "id": "06fcff6cc3a472",
-      "title": "2026 年最佳免费 OpenRouter 模型（以及真正的使用方法） | SurfMind",
-      "summary": "本文会介绍哪些免费模型值得用、限额到底是多少，以及如何通过 SurfMind 在任意网页上使用它们。 SurfMind 是一款将 OpenRouter 账号连接到浏览器 AI 侧栏的扩展程序。 免费模型通常会在名称中标注 “ (free)”，例如 gpt-oss-20b (free)。 模型权重与付费版本相同，只是愿意免费提供服务的供应商通常会设置更严格的容量限制。 实验室希望模型得到广泛采用。 开源模型发布出来，就是希望人们使用。 供应商希望你升级。 速率限制会让重度用户转向付费。 部分免费端点可能会使用你的提示词进行训练。 Ope",
-      "url": "https://surfmind.ai/zh/blog/best-free-openrouter-models",
-      "source": "Bing/en",
-      "kind": "free",
-      "trust": "independent_report",
-      "published_at": "2026-10-20T19:05:00+00:00",
-      "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "نقدم لك Gemini، مساعدك الشخصي الجديد للذكاء الاصطناعي",
+      "arabic_translated": true,
+      "english_title": "Introducing Gemini, your new personal AI assistant",
+      "english_translated": true
     },
     {
       "id": "efdc8e3f81ee86",
@@ -82,10 +67,10 @@
       "trust": "independent_report",
       "published_at": "2026-10-20T12:45:24+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "8 أيام متبقية لانتهاء صلاحية عرض Google AI Pro الترويجي. #GoogleAIPro - فيسبوك",
+      "arabic_translated": true,
+      "english_title": "8 days left for Google AI Pro Promo to expire. #GoogleAIPro - Facebook",
+      "english_translated": true
     },
     {
       "id": "8011b9fa7ef3d7",
@@ -97,10 +82,10 @@
       "trust": "independent_report",
       "published_at": "2026-10-20T11:31:30+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "خطأ في واجهة برمجة تطبيقات الجوزاء 403 - الوصول المجاني إلى الطبقة مقيد - منتدى مطوري الذكاء الاصطناعي من Google",
+      "arabic_translated": true,
+      "english_title": "Gemini API 403 Error - Free Tier Access Restricted - Google AI Developers Forum",
+      "english_translated": true
     },
     {
       "id": "2e04cfa34067ac",
@@ -112,10 +97,10 @@
       "trust": "independent_report",
       "published_at": "2026-10-20T08:09:14+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "استخدم هذا للحصول على إمكانية الوصول مدى الحياة إلى أكثر من 30 طرازًا من مقابل 30 $ - PCWorld",
+      "arabic_translated": true,
+      "english_title": "Use this promo code to get lifetime access to more than 30 AI models for $30 - PCWorld",
+      "english_translated": true
     },
     {
       "id": "64ca30baf45abd",
@@ -127,10 +112,10 @@
       "trust": "independent_report",
       "published_at": "2026-10-20T06:45:35+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "مثل الحلم. مترو بومن · هل أحلم (آلي). 👉 تم إنشاؤه داخل @syntx_global باستخدام Seedance2.5 رابط 👉 الموقع: go.syntx.ai/chillgrid 🔹استخدم الرمز الترويجي: 67CHILL15 (gi",
+      "arabic_translated": true,
+      "english_title": "Like a Dream. Metro Boomin · Am I Dreaming (Instrumental). 👉 Created inside @syntx_global using Seedance2.5 👉 Website link: go.syntx.ai/chillgrid 🔹Use PromoCode: 67CHILL15 (gi",
+      "english_translated": true
     },
     {
       "id": "d0972f36b1debd",
@@ -142,10 +127,10 @@
       "trust": "independent_report",
       "published_at": "2026-10-20T06:36:08+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "طلب للمراجعة — Gemini API Free Tier مقيد، مستوى الفوترة غير متاح - منتدى مطوري الذكاء الاصطناعي من Google",
+      "arabic_translated": true,
+      "english_title": "Request for review — Gemini API Free Tier restricted, Billing Tier Unavailable - Google AI Developers Forum",
+      "english_translated": true
     },
     {
       "id": "8a196f10dca2e7",
@@ -157,10 +142,10 @@
       "trust": "independent_report",
       "published_at": "2026-10-20T04:04:31+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "طلب مراجعة يدوية - يظهر المشروع الجديد \"مقيد\"، أريد البقاء في المستوى المجاني - منتدى مطوري الذكاء الاصطناعي من Google",
+      "arabic_translated": true,
+      "english_title": "Request for manual review - new project shows “Restricted”, I want to stay on the Free Tier - Google AI Developers Forum",
+      "english_translated": true
     },
     {
       "id": "b82f4c71e945e1",
@@ -172,10 +157,10 @@
       "trust": "independent_report",
       "published_at": "2026-10-19T22:52:18+00:00",
       "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "arabic_title": "تطلق MetLife (MET) مكونًا إضافيًا للتأمين على الحيوانات الأليفة في ChatGPT، هل يكفي الخصم بنسبة 7 ٪؟ - ببساطة وول ستريت",
+      "arabic_translated": true,
+      "english_title": "MetLife (MET) Launches ChatGPT Pet Insurance Plugin, Is The 7% Discount Enough? - Simply Wall Street",
+      "english_translated": true
     },
     {
       "id": "b2f7411e4635e8",
@@ -208,14 +193,14 @@
       "english_translated": false
     },
     {
-      "id": "a868b1a6ec5f99",
-      "title": "OpenRouter 保姆级教程：从0到1接入 GPT/Claude/Gemini 全模型（2026 最新）｜MESHLAUNCH",
-      "summary": "一文讲清 OpenRouter 是什么、怎么用一个 API Key 调用 GPT-4o、Claude 3.5、Gemini 等 400+ 大模型，保姆级步骤+真实踩坑记录，附 Python/Node.js 代码示例与免费额度使用技巧。",
-      "url": "https://meshlaunch.com/zh/blog/2026-openrouter-api-tutorial-gpt-claude-gemini.html",
-      "source": "Bing/en",
-      "kind": "api",
+      "id": "f80a1f9e26b014",
+      "title": "Gemini Predictions Promo Code for October 2026: Get $20 in Bitcoin When You Trade $100 - SailGP",
+      "summary": "Gemini Predictions Promo Code for October 2026: Get $20 in Bitcoin When You Trade $100 SailGP",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNczRPTGMwbE4zaF9CRHQyTUVrcnlfdUJoSC1rbTNERVJTLUNmeWNoRVVwOXVHSFBxWDhxZ1NwQkk1Y0ctOEVWT3RWWW5KWXgxNmFxYXdVYnpQZjIwR2VHcEtDMWs1Q3ZzU3BKWXlGVWJJSDE4amNaNWJNY0hpR0lFWE83QjBUX2ZDSlI3azlxRG9MdkwyM0VpcGdIRHBFS1FjbTFsb1BRSTFrcVBfWG5kQWxfRTRuRHc?oc=5",
+      "source": "Google News/en",
+      "kind": "subscription",
       "trust": "independent_report",
-      "published_at": "2026-10-19T11:28:00+00:00",
+      "published_at": "2026-10-19T07:00:00+00:00",
       "price_mentioned": null,
       "arabic_title": null,
       "arabic_translated": false,
