@@ -1,17 +1,32 @@
 {
   "project": "AI Offer Radar",
-  "generated_at": "2026-10-21T18:27:14.254654+03:00",
+  "generated_at": "2026-10-22T00:02:46.010761+03:00",
   "timezone": "Asia/Aden",
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "scanned_feeds": 30,
-  "count": 6,
+  "count": 7,
   "counts": {
     "free": 1,
     "api": 1,
-    "subscription": 4,
+    "subscription": 5,
     "community": 0
   },
   "items": [
+    {
+      "id": "6720ab66967dc9",
+      "title": "85% OFF FOR 2 DAYS ONLY! 🔥 We've just dropped the price of our AI Prompt Library by 85% for a VERY limited time — only 2 days! ⏳ 🚀 This is your chance to get access to thousan",
+      "summary": "85% OFF FOR 2 DAYS ONLY! 🔥 We've just dropped the price of our AI Prompt Library by 85% for a VERY limited time — only 2 days! ⏳ 🚀 This is your chance to get access to thousands of powerful AI prompts and premium resources at an incredible price. ⚡ H Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaHBSeWxpZk01Mnp5RUVsT2FXY0szZW1WTWo5TDBWYmo2WHRYSDhxYkxWVGtiYnp1MzVTWVBiSXJUdlA3SEVzVTFNaHhXMF94bXQ0aGxUTW9lMVUzTEEzZWVNWEpISERkaS11NWJIVjNPNk5KV2QwVTVuUlNhYWFhd3VPSzBvTV9fVk1QblgtdTg1RHV2dUdITk4wSlhVUHdYaEkxMlNpa0xEbWFLQnQ5WVFaRm5VWU9UaW9BY1BQRlZDNUd5NXBXSWtqZ1gtUlo5MVlYMEZxd2ZsbldTZmc?oc=5",
+      "source": "Google News/en",
+      "kind": "subscription",
+      "trust": "independent_report",
+      "published_at": "2026-10-21T20:19:27+00:00",
+      "price_mentioned": "85% OFF",
+      "arabic_title": "خصم 85% لمدة يومين فقط! لقد 🔥 خفضنا للتو سعر مكتبة AI Prompt الخاصة بنا بنسبة 85 ٪ لفترة محدودة للغاية — يومين فقط! 🚀 هذه هي فرصتك للوصول إلى",
+      "arabic_translated": true,
+      "english_title": "85% OFF FOR 2 DAYS ONLY! 🔥 We've just dropped the price of our AI Prompt Library by 85% for a VERY limited time — only 2 days! ⏳ 🚀 This is your chance to get access to thousan",
+      "english_translated": true
+    },
     {
       "id": "efdc8e3f81ee86",
       "title": "8 days left for Google AI Pro Promo to expire. #GoogleAIPro - Facebook",
