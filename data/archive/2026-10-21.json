@@ -1,14 +1,14 @@
 {
   "project": "AI Offer Radar",
-  "generated_at": "2026-10-21T18:25:54.307416+03:00",
+  "generated_at": "2026-10-21T18:27:14.254654+03:00",
   "timezone": "Asia/Aden",
   "date": "2026-10-21",
   "scanned_feeds": 30,
-  "count": 8,
+  "count": 6,
   "counts": {
     "free": 1,
     "api": 1,
-    "subscription": 6,
+    "subscription": 4,
     "community": 0
   },
   "items": [
@@ -73,21 +73,6 @@
       "english_translated": true
     },
     {
-      "id": "141f73a79ef019",
-      "title": "I used to spend $400 a month in ChatGPT and another $400 a month on Claude and then another $200 a month of Gemini However, lately I’ve made some adjustments Because each one ",
-      "summary": "I used to spend $400 a month in ChatGPT and another $400 a month on Claude and then another $200 a month of Gemini However, lately I’ve made some adjustments Because each one serves as a different team member with me So I’ve dropped my Claude Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQ3VjU2EwR1B0UEFLMmFZLU5kX2xaZWUyU0xHeXBlaklybHhzWXVIWWJ6S0ZPdUFjYjVDZGxWbUlhTGpIRmx3RFJrR3pXMUdwUFh4ZzQzamw3Mm1vaUVnekZCZTgzdzFCaEx1U21FcF9ubE1oR056eXFRZVJBQkRiQW5ueG9KVkNOdTdyUnhqV0ZVQ1ZKV1liUXZTUkpKbmY5TkhnREN5MHMyQ2MzTzd6RlJFQmM0WUZIMHZ6N2pZTk9GLUg4YzNXWlR4WjZTQnBjTWo1TVFJX2ExX1VVMlFsMmFsWQ?oc=5",
-      "source": "Google News/en",
-      "kind": "subscription",
-      "trust": "independent_report",
-      "published_at": "2026-10-19T02:21:23+00:00",
-      "price_mentioned": "$400",
-      "arabic_title": "اعتدت على إنفاق 400 $ شهريًا في و 400 $ أخرى شهريًا على ثم 200 $ أخرى شهريًا من الجوزاء ومع ذلك، في الآونة الأخيرة أجريت بعض التعديلات لأن كل منها",
-      "arabic_translated": true,
-      "english_title": "I used to spend $400 a month in ChatGPT and another $400 a month on Claude and then another $200 a month of Gemini However, lately I’ve made some adjustments Because each one ",
-      "english_translated": true
-    },
-    {
       "id": "a6a62d672c1f88",
       "title": "⚠️ GEMINI AI PRO 18-MONTH OFFER ENDING SOON! Gemini 4 Argon is now available to Ultra subscribers on Google Antigravity, Ultra and Pro subscribers in the Gemini app, and devel",
       "summary": "⚠️ GEMINI AI PRO 18-MONTH OFFER ENDING SOON! Gemini 4 Argon is now available to Ultra subscribers on Google Antigravity, Ultra and Pro subscribers in the Gemini app, and developers and enterprises on paid tiers of the Gemini API and Gemini platfo Facebook",
@@ -115,21 +100,6 @@
       "arabic_title": "اشتراك Google Gemini Pro مجاني لعملاء Google Pixel 11 Pro. استمتع بها. قم بتنزيل تطبيق Google One، وانتقل إلى الإعدادات وتحقق من العروض للحصول على 6 أشهر من Gemini Pro مجانًا",
       "arabic_translated": true,
       "english_title": "Free Google Gemini Pro subscription for Google Pixel 11 Pro customers. Love it. Download Google One app, head into settings and check offers to get 6 months of free Gemini Pro",
-      "english_translated": true
-    },
-    {
-      "id": "4980a62243ff33",
-      "title": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case - TradingView",
-      "summary": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case TradingView",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeW81a3dGaklVcGpncHM3MklnOFFRREgzVlZaTzdpYnFod1VTUkVLVXY4VTNCX2NUcEowUFFNNWlRV2VjbWF6S20yZkxpNXFUaVlocHNENG9OY1B1RzlfamVwbDZYZTZicmxvWGZjUkNQWTY2M2VHbEI5dnU1cXNLai14WWpmeWtjREVPVmU2VllMZHdvcGxyZEZZSmJuOVk5a0x0NlBYVEc4QVhDSTk3MC1tdlQtdkhvaTZ0R0hYVVJ3VWxLTUJKbFlLbzVtbTZ6OE5OTkdSUQ?oc=5",
-      "source": "Google News/en",
-      "kind": "subscription",
-      "trust": "independent_report",
-      "published_at": "2026-10-17T18:06:44+00:00",
-      "price_mentioned": "$5",
-      "arabic_title": "القاضي يرفض عرض الجوزاء، CFTC لإلغاء تسوية بقيمة 5 ملايين $ في قضية العقود الآجلة للبيتكوين -",
-      "arabic_translated": true,
-      "english_title": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case - TradingView",
       "english_translated": true
     }
   ],
