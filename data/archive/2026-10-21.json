@@ -1,14 +1,14 @@
 {
   "project": "AI Offer Radar",
-  "generated_at": "2026-10-21T18:24:59.438403+03:00",
+  "generated_at": "2026-10-21T18:25:54.307416+03:00",
   "timezone": "Asia/Aden",
   "date": "2026-10-21",
   "scanned_feeds": 30,
-  "count": 12,
+  "count": 8,
   "counts": {
     "free": 1,
     "api": 1,
-    "subscription": 10,
+    "subscription": 6,
     "community": 0
   },
   "items": [
@@ -36,25 +36,10 @@
       "kind": "subscription",
       "trust": "independent_report",
       "published_at": "2026-10-20T08:09:14+00:00",
-      "price_mentioned": null,
+      "price_mentioned": "$30",
       "arabic_title": "استخدم هذا للحصول على إمكانية الوصول مدى الحياة إلى أكثر من 30 طرازًا من مقابل 30 $ - PCWorld",
       "arabic_translated": true,
       "english_title": "Use this promo code to get lifetime access to more than 30 AI models for $30 - PCWorld",
-      "english_translated": true
-    },
-    {
-      "id": "64ca30baf45abd",
-      "title": "Like a Dream. Metro Boomin · Am I Dreaming (Instrumental). 👉 Created inside @syntx_global using Seedance2.5 👉 Website link: go.syntx.ai/chillgrid 🔹Use PromoCode: 67CHILL15 (gi",
-      "summary": "Like a Dream. Metro Boomin · Am I Dreaming (Instrumental). 👉 Created inside @syntx_global using Seedance2.5 👉 Website link: go.syntx.ai/chillgrid 🔹Use PromoCode: 67CHILL15 (gives 15% off any subscription plan) 🔹 SYNTX brings 90+ top AI tools into on Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVXBDcjFLV3l1QkZhN1RRVmZ1alpoSS1mSGZOdzF0VXRzUEU1X09DVHN1aHQxOGRDTVpZdDByWndEUHh3T3BZRy1FaFBHamxlb1ZCQXFWa3otSnZnVENPWExfcEtCQmhhOTRuSFA1MnJoQ2NTcHBpbEtuOUhGcGczVjg0aEJWT0VERWtCRkxpcWgyZGoyZWlYUE9kMEtiLUstQTkzY2JxSnF3ZVY2WDcxM3R4SWo0RnhvN3BqLWFhREdOWEgzM1ppRzdLRnNZaGRfblk0OURNVU1xaTVW?oc=5",
-      "source": "Google News/en",
-      "kind": "subscription",
-      "trust": "independent_report",
-      "published_at": "2026-10-20T06:45:35+00:00",
-      "price_mentioned": null,
-      "arabic_title": "مثل الحلم. مترو بومن · هل أحلم (آلي). 👉 تم إنشاؤه داخل @syntx_global باستخدام Seedance2.5 رابط 👉 الموقع: go.syntx.ai/chillgrid 🔹استخدم الرمز الترويجي: 67CHILL15 (gi",
-      "arabic_translated": true,
-      "english_title": "Like a Dream. Metro Boomin · Am I Dreaming (Instrumental). 👉 Created inside @syntx_global using Seedance2.5 👉 Website link: go.syntx.ai/chillgrid 🔹Use PromoCode: 67CHILL15 (gi",
       "english_translated": true
     },
     {
@@ -66,7 +51,7 @@
       "kind": "subscription",
       "trust": "independent_report",
       "published_at": "2026-10-19T18:16:15+00:00",
-      "price_mentioned": null,
+      "price_mentioned": "$60",
       "arabic_title": "تقارن خطة ChatPlayground AI Unlimited بين ChatGPT و Gemini و Claude مقابل 60 دولارًا (قيمة 619 دولارًا) ليرة تركية ؛DR: قارن الإجابات من أكثر من 20 طرازًا من الذكاء الاصطناعي في نا",
       "arabic_translated": true,
       "english_title": "ChatPlayground AI Unlimited Plan compares ChatGPT, Gemini, and Claude for $60 ($619 value) TL;DR: Compare answers from 20+ AI models in one window with a ChatPlayground AI Unl",
@@ -81,25 +66,10 @@
       "kind": "subscription",
       "trust": "independent_report",
       "published_at": "2026-10-19T15:55:32+00:00",
-      "price_mentioned": null,
+      "price_mentioned": "$20",
       "arabic_title": "مجموعة ذكاء اصطناعي مع موديلات متعددة مقابل 20 $/- Facebook",
       "arabic_translated": true,
       "english_title": "AI suite with multiple models for $20/seat - Facebook",
-      "english_translated": true
-    },
-    {
-      "id": "f0725225517f0d",
-      "title": "Want to learn how to get premium AI tools and digital subscriptions at cheaper rates and start reselling them for profit? I’m hosting a practical training where I’ll teach you",
-      "summary": "Want to learn how to get premium AI tools and digital subscriptions at cheaper rates and start reselling them for profit? I’m hosting a practical training where I’ll teach you how to source premium subscriptions, generate activation links where applicable, resell at Fac",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQTA0V3JROUlHOWQyLWpDZzVxSVNQOF9uVTJxNVlfa1pjLTZORy1EUXAyQU9CRTNFckoyS3IyOU9ZZFF6RnNOSGhzSjJ2UGNMSVJlQmYzT1dndmRMQkV0WUphTG50WXkyWEFPc3pFdHJMQUtsXzJtZlZiVHl4SG5WamZNR0VFaVQyeHZxRWFIb1JpSGFNQWN1ZFUtZFg4a3FfMWhuV1IxTDJiSEF3RzBaWkF3b2tSSnpPLTZSWXRzaUE0ejlJcnB4V1NjVUVMc3ZQbXh0THhoOFI0a21aY0lZYnNJWQ?oc=5",
-      "source": "Google News/en",
-      "kind": "subscription",
-      "trust": "independent_report",
-      "published_at": "2026-10-19T05:42:57+00:00",
-      "price_mentioned": null,
-      "arabic_title": "هل تريد معرفة كيفية الحصول على أدوات الذكاء الاصطناعي المتميزة والاشتراكات الرقمية بأسعار أرخص والبدء في إعادة بيعها لتحقيق الربح ؟ أستضيف تدريبًا عمليًا حيث سأعلمك",
-      "arabic_translated": true,
-      "english_title": "Want to learn how to get premium AI tools and digital subscriptions at cheaper rates and start reselling them for profit? I’m hosting a practical training where I’ll teach you",
       "english_translated": true
     },
     {
@@ -111,25 +81,10 @@
       "kind": "subscription",
       "trust": "independent_report",
       "published_at": "2026-10-19T02:21:23+00:00",
-      "price_mentioned": null,
+      "price_mentioned": "$400",
       "arabic_title": "اعتدت على إنفاق 400 $ شهريًا في و 400 $ أخرى شهريًا على ثم 200 $ أخرى شهريًا من الجوزاء ومع ذلك، في الآونة الأخيرة أجريت بعض التعديلات لأن كل منها",
       "arabic_translated": true,
       "english_title": "I used to spend $400 a month in ChatGPT and another $400 a month on Claude and then another $200 a month of Gemini However, lately I’ve made some adjustments Because each one ",
-      "english_translated": true
-    },
-    {
-      "id": "24a56b3fac9f97",
-      "title": "I have an active Google AI Pro plan offered through Jio. My Google One settings show “Google AI Pro – Offered through Jio”, and AI Studio shows the PRO badge on my account - G",
-      "summary": "I have an active Google AI Pro plan offered through Jio. My Google One settings show “Google AI Pro – Offered through Jio”, and AI Studio shows the PRO badge on my account Google AI Developers Forum",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOejdEdnFjajdTU0dHaDJiUkF5bEswamc3aEFxOUV4V0hpSHY1T2wxdFdiV1BtdnoyWkhvRW5MRFkxWE5GcF82ODRKX3NHb1RqV3BRM21iSUZudUFiVDgtR0hXNEp3QzdHMHJtTDUxTE9nMm1YT2NBYk9CTi1kb3pLMktKRmFNcTF1XzctSUh3LXIxSnQ1MjhrVWFScWY0RkxLQ014QzY2NDJ4WTJRcHBMWkp0OW8tVjE5SndTb214TTBWdFYxRkFzUU5Ma1A0SjdYTDFtaS1Cd252bk5qbmJ5aEppQ19RR2trYkl2QTBIUk1RLWlVWE5STlhVNmhMMlZLeXF4MVNub3huT1FuT3JOb1UxZmplNFpNR3Z6QkZpaFRyanhNeTBDc3Z3OHQ?oc=5",
-      "source": "Google News/en",
-      "kind": "subscription",
-      "trust": "independent_report",
-      "published_at": "2026-10-19T02:08:01+00:00",
-      "price_mentioned": null,
-      "arabic_title": "لدي خطة Google AI Pro نشطة مقدمة من خلال Jio. تعرض إعدادات Google One الخاصة بي \"Google AI Pro – مقدم من خلال Jio\"، ويعرض AI Studio شارة PRO على حسابي - G",
-      "arabic_translated": true,
-      "english_title": "I have an active Google AI Pro plan offered through Jio. My Google One settings show “Google AI Pro – Offered through Jio”, and AI Studio shows the PRO badge on my account - G",
       "english_translated": true
     },
     {
@@ -163,21 +118,6 @@
       "english_translated": true
     },
     {
-      "id": "3392cfc5daa041",
-      "title": "Most AI content gets hammered by Google updates because it's cheap, unedited slop. We built an agentic SEO system on a two-brain setup to prove you can scale expert content wi",
-      "summary": "Most AI content gets hammered by Google updates because it's cheap, unedited slop. We built an agentic SEO system on a two-brain setup to prove you can scale expert content without triggering spam filters. Here are the early results from our hobby site testi Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNRnBZVDlSV3JBYm9CZERyMkp6S243LXlFQUtFTFk0SUwzd3ExdFBUUEdpOG5NOUxoQUpWVXNTWU90UkZnaTlmS1ZsZDMyY203SUc0dTdlQW9lbC1NYWY0MVZLcGtKM2tzZEduUU5UMVFZdmUyUmdYamtFaTNGSGlCQkFqVFUyWXZCQWRXOTg1QmswcDVkZXZGQjd6dVdZeGlNU1luQ1k1OURyOU96ZnR6MWtPOGd4OVVNLUxIeGNyREZFSE9kSE1RS0RYZFB5ZHhvMFNSMGdXYkFmNjNK?oc=5",
-      "source": "Google News/en",
-      "kind": "subscription",
-      "trust": "independent_report",
-      "published_at": "2026-10-18T02:05:01+00:00",
-      "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
-    },
-    {
       "id": "4980a62243ff33",
       "title": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case - TradingView",
       "summary": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case TradingView",
@@ -186,11 +126,11 @@
       "kind": "subscription",
       "trust": "independent_report",
       "published_at": "2026-10-17T18:06:44+00:00",
-      "price_mentioned": null,
-      "arabic_title": null,
-      "arabic_translated": false,
-      "english_title": null,
-      "english_translated": false
+      "price_mentioned": "$5",
+      "arabic_title": "القاضي يرفض عرض الجوزاء، CFTC لإلغاء تسوية بقيمة 5 ملايين $ في قضية العقود الآجلة للبيتكوين -",
+      "arabic_translated": true,
+      "english_title": "Judge Rejects Gemini, CFTC Bid To Overturn $5M Settlement In Bitcoin Futures Case - TradingView",
+      "english_translated": true
     }
   ],
   "disclaimer_ar": "الروابط والأسعار ليست ضمانًا؛ تحقّق قبل الدفع.",
