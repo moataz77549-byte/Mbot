@@ -4,6 +4,7 @@ export function keyboard(lang='ar'){
   [{text:a?'🔥 عروض اليوم':'🔥 Today',callback_data:'report'},{text:a?'🆓 المجاني':'🆓 Free',callback_data:'free'}],
   [{text:a?'🔌 واجهات API':'🔌 APIs',callback_data:'api'},{text:a?'🏷️ الاشتراكات':'🏷️ Subscriptions',callback_data:'subscription'}],
   [{text:a?'📊 الإحصائيات':'📊 Statistics',callback_data:'stats'},{text:a?'🌐 English':'🌐 العربية',callback_data:'toggle_language'}],
+  [{text:a?'🤖 بوتات قيد البحث':'🤖 Tracked bots',callback_data:'tracked_bots'}],
   [{text:a?'🖥 لوحة التحكم':'🖥 Dashboard',web_app:{url:MINI_APP_URL}}],
  ];return {inline_keyboard:rows};
 }
