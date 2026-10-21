@@ -52,7 +52,9 @@ BAD_TITLE=("request for review","request to review","request for manual","reques
            "i have an active","my google one settings","practical training","i'm hosting a",
            "i’m hosting a","start reselling","teach you","created inside","metro boomin",
            "instrumental","ai content gets","seo system","free tier access restricted",
-           "developer forum","please how can","request to review")
+           "developer forum","please how can","request to review","cftc",
+           "futures case","bitcoin futures","settlement","tradingview",
+           "i used to spend","i've spent","i’ve made some adjustments")
 def relevant(title,summary,url):
     # The headline must describe a DEAL; body-only mentions trigger false positives.
     headline=title.lower()
