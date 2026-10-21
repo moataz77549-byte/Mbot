@@ -1,5 +1,8 @@
 name: Daily AI Offer Radar
 on:
+  push:
+    branches: [main]
+    paths: ['sources.json','collector/**','.github/workflows/daily-radar.yml']
   schedule:
     - cron: '0 18 * * *' # 21:00 Asia/Aden
   workflow_dispatch:
