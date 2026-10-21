@@ -123,16 +123,18 @@ def classify(entry,now):
       kind=kind,trust=trust,published_at=d.isoformat() if d else None,price_mentioned=None,
       arabic_title=None,arabic_translated=False,english_title=None,english_translated=False)
 
-def translate(title,language):
-    # Optional third-party public translation endpoint: do not send private messages/credentials.
+def translate(title,source,language):
+    # Public translation service expects explicit source/destination codes.
+    if source==language:return title,True
     try:
-        params={"q":title,"langpair":"auto|"+language}
+        params={"q":title,"langpair":source+"|"+language}
         if os.getenv("MYMEMORY_CONTACT_EMAIL"):params["de"]=os.environ["MYMEMORY_CONTACT_EMAIL"]
         r=SESSION.get("https://api.mymemory.translated.net/get",params=params,timeout=9)
         r.raise_for_status();res=r.json()
         if res.get("responseStatus")==200:
             translated=clean(res.get("responseData",{}).get("translatedText",""),180)
-            if translated and translated.lower()!=title.lower():return translated,True
+            if translated and "MYMEMORY WARNING" not in translated.upper():
+                return translated,True
     except (requests.RequestException,ValueError,KeyError):pass
     return None,False
 
@@ -154,10 +156,17 @@ def collect(cfg,now):
     out=list(unique.values())
     out.sort(key=lambda x:(x["trust"]=="official_source",bool(x["published_at"]),x["published_at"] or ""),reverse=True)
     out=out[:32]
-    # Translate a bounded set to protect free external translation quota.
+    # Translate a bounded set. Keep original text visible if the service fails.
     for item in out[:10]:
-        item["arabic_title"],item["arabic_translated"]=translate(item["title"],"ar")
-        item["english_title"],item["english_translated"]=translate(item["title"],"en")
+        title=item["title"]
+        if re.search(r"[\u0600-\u06FF]",title):source="ar"
+        elif re.search(r"[\u0400-\u04FF]",title):source="ru"
+        elif re.search(r"[\u4E00-\u9FFF]",title):source="zh-CN"
+        else:
+            candidate=item["source"].split("/")[-1]
+            source=candidate if candidate in ("en","es","fr","pt","tr","id","de","ru","ar") else "en"
+        item["arabic_title"],item["arabic_translated"]=translate(title,source,"ar")
+        item["english_title"],item["english_translated"]=translate(title,source,"en")
     return out
 
 def report_for(items,now,scanned):
