@@ -54,7 +54,7 @@ def relevant(title,summary,url):
     headline=title.lower()
     context=(title+" "+summary).lower()
     return (any(t in context for t in TOPIC)
-        and (any(t in headline for t in OFFER) or bool(re.search(r"(?<!\\w)(?:[$€£]\\s*\\d+|\\d+%\\s*off)",headline)))
+        and (any(t in headline for t in OFFER) or bool(re.search(r"(?<!\w)(?:[$€£]\s*\d+|\d+%\s*off)",headline)))
         and not any(t in context for t in BANNED)
         and not any(t in headline for t in BAD_TITLE))
 
@@ -165,7 +165,7 @@ def collect(cfg,now):
     unique={}
     # Cross-engine duplicates and slightly different syndicated links.
     for item in out:
-        titlekey=re.sub(r"[^a-z0-9\\u0600-\\u06ff]+"," ",item["title"].lower()).strip()[:115]
+        titlekey=re.sub(r"[^a-z0-9\u0600-\u06ff]+"," ",item["title"].lower()).strip()[:115]
         key=titlekey if len(titlekey)>15 else item["url"]
         prior=unique.get(key)
         if not prior or (item.get("published_at") or "")>(prior.get("published_at") or ""):unique[key]=item
