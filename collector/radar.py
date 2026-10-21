@@ -48,7 +48,11 @@ BAD_TITLE=("request for review","request to review","request for manual","reques
            "free tier restricted","restricted project","quota clarification","access restricted",
            "google ai developers forum","google ai developer forum","pet insurance",
            "insurance plugin","bond yield","bitcoin when you trade","stock picks",
-           "trading signal","active plan offered","3 ways gemini","review complete free trial")
+           "trading signal","active plan offered","3 ways gemini","review complete free trial",
+           "i have an active","my google one settings","practical training","i'm hosting a",
+           "i’m hosting a","start reselling","teach you","created inside","metro boomin",
+           "instrumental","ai content gets","seo system","free tier access restricted",
+           "developer forum","please how can","request to review")
 def relevant(title,summary,url):
     # The headline must describe a DEAL; body-only mentions trigger false positives.
     headline=title.lower()
@@ -120,6 +124,10 @@ def feeds(cfg):
     jobs += [(x["url"],x.get("label","Custom RSS")) for x in cfg.get("rss",[])]
     return jobs
 
+def quoted_price(title):
+    m=re.search(r"(?i)(?:USD\s*|[$€£]\s*)\d{1,5}(?:[.,]\d{1,2})?|\b\d{1,2}%\s*(?:off|discount|خصم)",title)
+    return m.group(0)[:28] if m else None
+
 def classify(entry,now):
     u=canonical(entry["url"])
     title=entry["title"];summary=entry.get("summary","")
@@ -133,7 +141,7 @@ def classify(entry,now):
     s=(title+" "+summary).lower()
     kind="api" if any(x in s for x in ("api","token","credits","توكن")) else "free" if any(x in s for x in ("free","مجاني","gratis","gratuit","бесплатно","免費","免费","ücretsiz")) else "community" if "t.me/" in u else "subscription"
     return dict(id=hashlib.sha256(u.encode()).hexdigest()[:14],title=title,summary=summary,url=u,source=src,
-      kind=kind,trust=trust,published_at=d.isoformat() if d else None,price_mentioned=None,
+      kind=kind,trust=trust,published_at=d.isoformat() if d else None,price_mentioned=quoted_price(title),
       arabic_title=None,arabic_translated=False,english_title=None,english_translated=False)
 
 def translate(title,source,language):
