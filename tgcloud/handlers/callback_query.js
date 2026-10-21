@@ -8,6 +8,12 @@ export default async function(callback){
  let lang=await getLang(uid);if(action==='toggle_language'){
   lang=lang==='ar'?'en':'ar';await setLang(uid,lang);return api.sendMessage({chat_id:id,text:lang==='ar'?'تم تغيير اللغة':'Language changed',reply_markup:keyboard(lang)});
  }
+ if(action==='tracked_bots'){
+  const ar=lang==='ar';
+  const msg=(ar?'🤖 بوتات تُتابَع كمصادر بحث، دون توثيق للبائع أو صلاحية الحسابات:':'🤖 Tracked as research leads, not endorsed sellers:')+
+    '\n• https://t.me/ver_pixel_bot\n• https://t.me/zetocnikAI_bot';
+  return api.sendMessage({chat_id:id,text:msg,reply_markup:keyboard(lang),link_preview_options:{is_disabled:true}});
+ }
  try{const feed=await loadFeed();let result='';
   if(action==='report')result=digest(feed,lang);
   else if(action==='stats')result=lang==='ar'?`📊 آخر فحص: ${feed.date||'—'}\nالنتائج: ${feed.count||0}\nالمصادر المفحوصة: ${feed.scanned_feeds||0}`:`📊 Last scan: ${feed.date||'—'}\nResults: ${feed.count||0}\nSources scanned: ${feed.scanned_feeds||0}`;
