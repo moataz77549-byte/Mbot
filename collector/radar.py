@@ -17,8 +17,10 @@ TZ=ZoneInfo("Asia/Aden")
 SESSION=requests.Session()
 SESSION.headers.update({"User-Agent":"AIOfferRadar/1.0 (public RSS research)"})
 OFFER=("free trial","free tier","discount","promo","coupon","deal","credits","sale","offer",
-       "خصم","مجاني","تجربة","عرض","تخفيض","اشتراك","كوبون","descuento","gratis","oferta",
-       "gratuit","réduction","скидка","бесплатно","indirim","ücretsiz","desconto","优惠","免费","رایگان")
+       "cheap","wholesale","bulk price","special price","% off","save $",
+       "خصم","مجاني","تجربة مجانية","عرض","تخفيض","كوبون","سعر مخفض","للجملة",
+       "descuento","gratis","oferta","gratuit","réduction","скидка","бесплатно",
+       "indirim","ücretsiz","desconto","优惠","免费","رایگان")
 TOPIC=("chatgpt","openai","gemini","google ai","grok","xai","claude","anthropic","openrouter",
        "groq","mistral","deepseek","qwen","llama","nvidia","api","llm","tokens"," ai ",
        "ذكاء اصطناعي","شات جي بي تي","جيمناي")
@@ -41,9 +43,20 @@ def canonical(url):
         return urlunsplit(("https",host,p.path.rstrip("/") or "/",urlencode(q),""))
     except ValueError:return ""
 
+BAD_TITLE=("request for review","request to review","request for manual","request for free tier",
+           "403 error","403 permission","billing tier unavailable","project restricted",
+           "free tier restricted","restricted project","quota clarification","access restricted",
+           "google ai developers forum","google ai developer forum","pet insurance",
+           "insurance plugin","bond yield","bitcoin when you trade","stock picks",
+           "trading signal","active plan offered","3 ways gemini","review complete free trial")
 def relevant(title,summary,url):
-    s=(title+" "+summary+" "+url).lower()
-    return any(t in s for t in TOPIC) and any(t in s for t in OFFER) and not any(t in s for t in BANNED)
+    # The headline must describe a DEAL; body-only mentions trigger false positives.
+    headline=title.lower()
+    context=(title+" "+summary).lower()
+    return (any(t in context for t in TOPIC)
+        and (any(t in headline for t in OFFER) or bool(re.search(r"(?<!\\w)(?:[$€£]\\s*\\d+|\\d+%\\s*off)",headline)))
+        and not any(t in context for t in BANNED)
+        and not any(t in headline for t in BAD_TITLE))
 
 def parse_date(s):
     try:
@@ -150,9 +163,12 @@ def collect(cfg,now):
                     if item:out.append(item)
             except Exception as ex:LOG.warning("Could not parse source: %s",str(ex)[:100])
     unique={}
+    # Cross-engine duplicates and slightly different syndicated links.
     for item in out:
-        prior=unique.get(item["url"])
-        if not prior or (item.get("published_at") or "")>(prior.get("published_at") or ""):unique[item["url"]]=item
+        titlekey=re.sub(r"[^a-z0-9\\u0600-\\u06ff]+"," ",item["title"].lower()).strip()[:115]
+        key=titlekey if len(titlekey)>15 else item["url"]
+        prior=unique.get(key)
+        if not prior or (item.get("published_at") or "")>(prior.get("published_at") or ""):unique[key]=item
     out=list(unique.values())
     out.sort(key=lambda x:(x["trust"]=="official_source",bool(x["published_at"]),x["published_at"] or ""),reverse=True)
     out=out[:32]
